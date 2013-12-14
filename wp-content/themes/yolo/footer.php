@@ -1,3 +1,12 @@
+<div id="foot-wrapper">
+	<div id="footer">
+		&copy2013 Yolonepal
+	</div><!-- footer -->
+</div><!-- foot-wrapper -->
+
+
+</body>
+</html>
 <?php
 /**
  * The template for displaying the footer
@@ -8,6 +17,7 @@
  * @subpackage Twenty_Thirteen
  * @since Twenty Thirteen 1.0
  */
+/*
 ?>
 
 		</div><!-- #main -->
@@ -23,4 +33,4 @@
 
 	<?php wp_footer(); ?>
 </body>
-</html>
+</html><?php */ ?>

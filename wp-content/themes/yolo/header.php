@@ -24,6 +24,7 @@
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<link id="yolo-css" media="all" type="text/css" href="http://localhost/yolonepal/wp-content/themes/yolo/css/yolo-style.css" rel="stylesheet"></link>
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
@@ -36,7 +37,7 @@
 	
 	<div id="banner"> 
 	
-		<div id="logo"><a href="#"><img src="logo-small.png"/></a></div>
+		<div id="logo"><a href="#"><img src="./wp-content/themes/yolo/images/yolo/logo-small.png"/></a></div>
 	
 	</div><!-- end banner -->
 	
