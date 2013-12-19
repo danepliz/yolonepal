@@ -41,22 +41,28 @@
 	
 	</div><!-- end banner -->
 	
-	<div id="menu-wrapper"> 
-		<ul id="main-nav">
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Events</a></li>
-			<li><a href="#">Articles</a></li>
-			<li><a href="#">Gallery</a></li>
-			<li><a href="#">Bands & Artists</a></li>
-			<li><a href="#">Bar & Pubs</a></li>
-			<li><a href="#">Videos</a></li>
-			<li><a href="#">Blogs</a></li>
-			<li><a href="#">Countries</a></li>
-			<li><a href="#">Contact Us</a></li>
-		</ul>
+	<?php //wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'menu-wrapper' ) ); ?>
 	
+	<?php //* ?>
+	<div class="menu-wrapper"> 
+		<ul id="main-nav">
+			<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
+			<li><a href="<?php echo esc_url( home_url( '/events' ) ); ?>">Events</a></li>
+			<li><a href="<?php echo esc_url( home_url( '/articles' ) ); ?>">Articles</a></li>
+			<li><a href="<?php echo esc_url( home_url( '/gallery' ) ); ?>">Gallery</a></li>
+			<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Bands & Artists</a></li>
+			<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Bar & Pubs</a></li>
+			<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Videos</a></li>
+			<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Blogs</a></li>
+			<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Countries</a></li>
+			<li><a href="<?php echo esc_url( home_url( '/contact-us' ) ); ?>">Contact Us</a></li>
+		</ul>
 	</div><!-- menu-wrapper -->
+	<?php //*/ ?>
+	
 </header><!-- end header-wrap -->
+
+
 
 <?php /*
 	<div id="page" class="hfeed site">

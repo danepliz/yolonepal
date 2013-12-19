@@ -1,3 +1,19 @@
+/*
+Theme Name: Yolonepal-new
+Theme URI: http://wordpress.org/themes/yolo
+Author: Danepliz
+Author URI: http://pradeepkarki.com.np/
+Description: The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: twentythirteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
 @charset "utf-8";
 /* CSS Document */
 
@@ -18,7 +34,7 @@ rt{float:right} lt{float:left}
 body{
 /* 	background:$(body-background); */
 /* 	background:url(images/yolo/pradeep.jpg); */
-	background:#FFF4FA;
+	background:#800038;
 /* 	background:#421C52; #3D3224; */
 	font-size: 14px;
 	font-family: arial;
@@ -32,18 +48,68 @@ ul{
 	list-style:none;
 }
 
-#header-wrapper, #foot-wrapper{
-	float:left;
-	width:100%;
+header{
+	width:96%;
+	padding:0 2%;
+	height:60px;
+	background:#800038;
+	border-bottom:5px #000 solid;
 }
 
-#header-wrapper{
-	height:125px;
-	background:#FFFFFF;
-	border-top: 5px #800080 solid;
-	margin-bottom:20px;
-/* 	background-image: url(images/yolo/bn.png); */
+a#logo{
+	float:left;
+	display:block;
+	width:100px;
+	height:60px;
+}
+
+nav{
+	float:right;
+	height:60px;
+}
+
+#main-nav{
+	height:60px;
+	margin:0 auto;
+}
+
+#main-nav li{
+	display:block;
+	float:left;
+}
+
+#main-nav li a{
+	display: block;
+	float: left;
+	height: 60px;
+	padding: 0 20px;
+	color: #CCC;
+	text-decoration: none;
+	font-family: arial;
+	font-size: 14px;
+	line-height: 60px;
+ 	border-right: 1px solid #800014;
+	border-left: 1px solid #800062;
+}
+
+#main-nav li:first-child a{border-left: none !important;}
+
+#main-nav li:last-child a{border-right: none !important;}
+
+#main-nav li  a:hover{color:#FFF}
+
+#slider-wrap{
+	float:left;
+	width:100%;
+	height:500px;
+	background-color:#000;
+	background-image: url(images/yolo/slider.jpg);
 	background-size:cover;
+}
+
+#foot-wrapper{
+	float:left;
+	width:100%;
 }
 
 #foot-wrapper{
@@ -62,60 +128,31 @@ ul{
 	width:1000px;
 }
 
-#logo a img{
-	width: 153px;
-	height: 50px;
-	margin-top: 17px;
-}
-
-
-#slider-wrap{
-	width:990px;
-	height:400px;
-	margin-left:10px;
-}
-
 
 #menu-wrapper{
-	background:#800080; /* #CC398E; */
+	background:#800038; /* #800080 */
 	height:40px;
-	width:100%;
 	float:left;
 	border-top: 1px solid #A1305D;
 	border-bottom: 1px solid #A1305D;
 	box-shadow:0px 1px 1px #CCC;
 }
 
-#main-nav{
-	height:40px;
-	width:1000px;
-	margin:0 auto;
-}
+/* Container */
 
-#main-nav li{
-	display:block;
+#container{
+	width:96%;
 	float:left;
+	padding:10px 2%;	
 }
 
-#main-nav li a{
-	display: block;
-	float: left;
-	height: 40px;
-	padding: 0 20px;
-	color: #CCC;
-	text-decoration: none;
-	font-family: arial;
-	font-size: 14px;
-	line-height: 40px;
- 	border-right: 1px solid #800014;   /* #A1305D; */
-	border-left: 1px solid #800062; /* #E88293; */
+
+#sidebar{
+	width:200px;
+	float:right;
+	
 }
 
-#main-nav li:first-child a{border-left: none !important;}
-
-#main-nav li:last-child a{border-right: none !important;}
-
-#main-nav li  a:hover{color:#FFF}
 
 #left-content{
 	float:left;
@@ -184,11 +221,6 @@ ul{
 	width:1000px;
 }
 
-#container{
-	margin:0px;
-	width:1000px;
-	float:left;
-}
 
 /** News and Events and Editorial summary */
 
